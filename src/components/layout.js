@@ -1,13 +1,9 @@
 import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
-import {
-  container,
-  heading,
-  navLinks,
-  navLinkItem,
-  navLinkText,
-  siteTitle,
-} from './layout.module.css'
+import { useStaticQuery, graphql } from 'gatsby'
+import Header from './top/header'
+import Footer from './bottom/footer'
+import { heading, outer, mainContainer, lineBreak, content, listGames } from './layout.module.css'
+
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -16,35 +12,25 @@ const Layout = ({ pageTitle, children }) => {
           title
         }
       }
-    }`)
+    }`
+  )
   return (
-    <div className={container}>
+    <div className={outer}>
       <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-      <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
-              Home
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-              About
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/blog" className={navLinkText}>
-              Blog
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <main>
+      <Header />
+      <main className={mainContainer}>
         <h1 className={heading}>{pageTitle}</h1>
-        {children}
+        <hr className={lineBreak} />
+        <div className={content}>
+          {children}
+        </div>
+        <hr classname={lineBreak} />
+        <div className={listGames}>
+
+        </div>
       </main>
     </div>
   )
 }
+
 export default Layout

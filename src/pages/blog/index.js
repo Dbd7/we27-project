@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="My Blog Posts">
+    <Layout pageTitle="LINK DOWNLOAD">
       {
         data.allMdx.nodes.map(node => (
           <article key={node.id}>
