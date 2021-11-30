@@ -1,15 +1,7 @@
-.heading {
-  color: white;
-  display: inline-block;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .outer {
   background-color: lightgrey;
-  min-height: 600px;
-  width: 600px;
+  height: 750px;
+  width: 100%;
   border: 3px solid black;
   border-radius: 10px;
   margin: 0 auto;
@@ -20,22 +12,13 @@
   background-color: rgba(80, 80, 80, 1);
   color: white;
   width: 96%;
-  height: 600px;
+  height: 630px;
   border: 3px solid black;
   border-radius: 10px;
   margin: 8px auto;
 }
 
-.content {
-  margin: 0 10px;
-  overflow-y: scroll;
-  height: 470px;
-}
-
-.content::-webkit-scrollbar-track {
-  background-color: rgba(80, 80, 80, 1);
-}
-
-.content::-webkit-scrollbar {
-  width: 0px;
+.line-break {
+  margin: 0;
+  border-bottom: 2px solid black;
 }

@@ -1,12 +1,22 @@
 import * as React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Header from './top/header'
-import Footer from './bottom/footer'
-import { heading, outer, mainContainer, lineBreak, content, listGames } from './layout.module.css'
+import { outer, mainContainer, lineBreak, background } from './layout.module.css'
+import Header from './header/header'
+import Top from './top/top'
+import Bottom from './bottom/bottom'
+import Middle  from './middle/middle'
+
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
     query {
+      file(relativePath: {eq: "background.jpg"}) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
       site {
         siteMetadata {
           title
@@ -14,20 +24,21 @@ const Layout = ({ pageTitle, children }) => {
       }
     }`
   )
+
+  const backgroundData = data.file.childImageSharp.fluid;
+
   return (
     <div className={outer}>
       <title>{pageTitle} | {data.site.siteMetadata.title}</title>
       <Header />
       <main className={mainContainer}>
-        <h1 className={heading}>{pageTitle}</h1>
+        <Top pageTitle={pageTitle} />
         <hr className={lineBreak} />
-        <div className={content}>
+        <Middle>
           {children}
-        </div>
-        <hr classname={lineBreak} />
-        <div className={listGames}>
-
-        </div>
+        </Middle>
+        <hr className={lineBreak} />
+        <Bottom />
       </main>
     </div>
   )

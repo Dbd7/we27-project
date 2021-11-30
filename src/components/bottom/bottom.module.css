@@ -1,0 +1,16 @@
+.list-games {
+    display: flex;
+    flex-wrap: no-wrap;
+    align-items: center;
+    justify-content: center;
+    overflow-x: scroll;
+}
+  
+.list-games::-webkit-scrollbar {
+    width: 0px;
+}
+  
+.icon-game {
+    margin: 0 5px;
+    align-content: center;
+}

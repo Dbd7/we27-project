@@ -7,6 +7,9 @@ module.exports = {
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-mdx",
+    "gatsby-transformer-sharp",
+    "gatsby-background-image",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -14,8 +17,13 @@ module.exports = {
         path: `${__dirname}/blog`,
       }
     },
-    "gatsby-plugin-mdx",
-    "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path:  `${__dirname}/src/images`,
+      }
+    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -24,6 +32,6 @@ module.exports = {
         ],
         display: 'swap'
       }
-    }
+    },
   ],
 };
