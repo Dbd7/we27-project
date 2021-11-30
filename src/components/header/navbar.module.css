@@ -1,23 +1,43 @@
 .nav-bar {
-  display: flex;
   width: 100%;
+  height: 48px;
   margin: 0 auto;
-  justify-content: space-around;
 }
 
 .nav-links {
+  height: 100%;
   display: flex;
   padding: 0;
   margin: 0 auto;
+  align-items: center;
   justify-content: space-around;
   list-style: none;
 }
   
 .nav-link-item {
-  padding: 0 12px;
+  background-color: rgba(245, 224, 80, 0.6);
+  height: 80%;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.nav-link-item:hover {
+  background-color: rgba(245, 224, 80, 1);
+  cursor: pointer;
 }
   
 .nav-link-text {
-  color: red;
+  display: block;
+  text-align: center;
+  color: black;
+  font-size: 20px;
   font-weight: 700;
+  letter-spacing: 5px;
+  text-decoration: none;
 }

@@ -3,9 +3,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { outer, mainContainer, lineBreak, background } from './layout.module.css'
 import Header from './header/header'
 import Top from './top/top'
-import Bottom from './bottom/bottom'
 import Middle  from './middle/middle'
-
+import NavBar from "./header/navbar";
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -38,7 +37,7 @@ const Layout = ({ pageTitle, children }) => {
           {children}
         </Middle>
         <hr className={lineBreak} />
-        <Bottom />
+        <NavBar />
       </main>
     </div>
   )

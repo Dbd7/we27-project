@@ -1,9 +1,7 @@
 .list-games {
-    display: flex;
-    flex-wrap: no-wrap;
-    align-items: center;
+    flex-wrap: 1;
     justify-content: center;
-    overflow-x: scroll;
+    overflow: scroll;
 }
   
 .list-games::-webkit-scrollbar {
@@ -11,6 +9,5 @@
 }
   
 .icon-game {
-    margin: 0 5px;
-    align-content: center;
+    margin: 2px 8px;
 }
