@@ -1,6 +1,6 @@
 .content {
     overflow-y: scroll;
-    height: 500px;
+    height: 460px;
 }
   
 .content::-webkit-scrollbar-track {
@@ -10,4 +10,11 @@
 .content::-webkit-scrollbar {
     width: 0px;
 }
-  
+
+.section-container {
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

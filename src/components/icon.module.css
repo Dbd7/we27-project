@@ -1,0 +1,18 @@
+.icon-bar {
+    cursor: pointer;
+    background-color: rgba(145, 152, 159, 0.50);
+    display: block;
+    justify-content: center;
+    width: 280px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+    color: white;
+    font-size: 32px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.icon-bar:hover {
+    background-color: rgba(145, 152, 159, 0.80);
+}

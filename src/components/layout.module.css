@@ -1,7 +1,9 @@
 .outer {
   background-color: lightgrey;
-	max-width: 1080px; 
+	max-width: 1080px;
+  width: 100%;
 	margin: 0 auto !important; 
+  padding: 0;
 	float: none !important; 
   border: 3px solid black;
   border-radius: 10px;
