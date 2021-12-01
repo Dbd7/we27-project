@@ -22,7 +22,7 @@ const NavBar = () => {
           </Link>
         </li>
         <li className={navLinkItem}>
-          <Link to="/blog" className={navLinkText}>
+          <Link to="/gamelist" className={navLinkText}>
             DOWNLOAD
           </Link>
         </li>
