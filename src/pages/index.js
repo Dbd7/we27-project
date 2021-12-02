@@ -8,7 +8,7 @@ const IndexPage = () => {
     <Layout pageTitle="WE27project">
       <div>
         <div className={imageContainer}>
-          <StaticImage alt="dog" src="../images/dog.jpg" className={slideshowImage}/>
+          <StaticImage alt="dog" src="../images/home.png" className={slideshowImage}/>
         </div>
       </div>
     </Layout>
