@@ -6,8 +6,10 @@ import {} from './contact.module.css'
 
 const ContactPage = () => {
   const contacts = [ 
-    {name:'whatsapp', link: 'https://api.whatsapp.com/send?phone=60149017210', icon: <StaticImage alt='whatsapp' src='../images/WA.png' />},
-    {name:'telegram', link: 'https://t.me/WANGEMAS27', icon: <StaticImage alt='telegram' src='../images/TG.png' />},
+    {name:'wangemas27', link: 'https://api.whatsapp.com/send?phone=60149017210', icon: <StaticImage alt='whatsapp-1' src='../images/wa.png' />},
+    {name:'wangemas27', link: 'https://t.me/WANGEMAS27', icon: <StaticImage alt='telegram-1' src='../images/tg.png' />},
+    {name:'wangemas33', link: 'https://api.whatsapp.com/send?phone=60174968967', icon: <StaticImage alt='whatsapp-2' src='../images/wa.png' />},
+    {name:'wangemas33', link: 'https://t.me/WANGEMAS33', icon: <StaticImage alt='telegram-2' src='../images/tg.png' />},
   ];
 
   return (

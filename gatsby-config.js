@@ -9,7 +9,6 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
-    "gatsby-background-image",
     {
       resolve: "gatsby-source-filesystem",
       options: {
