@@ -1,10 +1,11 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 import { container, title } from "./siteTitle.module.css";
 
 const SiteTitle = () => {
     return (
         <div className={container}>
-            <h1 className={title}>WE27project</h1>
+            <StaticImage className={title} alt='wangemas' src='../../images/wangemas.png' />
         </div>
     )
 }

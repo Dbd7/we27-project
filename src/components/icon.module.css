@@ -16,3 +16,16 @@
 .icon-bar:hover {
     background-color: rgba(145, 152, 159, 0.80);
 }
+
+@media only screen and (max-width: 600px) {
+    .icon-bar {
+        width: 42%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .icon-bar {
+        width: 90%;
+    }
+}

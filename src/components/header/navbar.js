@@ -41,7 +41,7 @@ const NavBar = () => {
         {navList.map((nav, index) => (
           <li key={index} className={navLinkItem}>
             <Link to={nav.linkSrc} className={navLinkText}>
-              {width > 700 ? nav.name : <FontAwesomeIcon icon={nav.iconSrc} size="2px" />}
+              {width > 700 ? nav.name : <FontAwesomeIcon icon={nav.iconSrc} size="2x" />}
             </Link>
           </li>
         ))}

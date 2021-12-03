@@ -1,3 +1,8 @@
-header {
-    background-color: green
+.header-logo {
+    display: flex;
+    width: 50%;
+    max-width: 500px;
+    height: 80px;
+    margin: 5px auto;
+    align-items: center;
 }
