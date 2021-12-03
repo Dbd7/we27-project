@@ -5,6 +5,7 @@ module.exports = {
     description: "WANGEMAS27 PROJECT"
   },
   plugins: [
+    "gatsby-plugin-fontawesome-css",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-plugin-mdx",
