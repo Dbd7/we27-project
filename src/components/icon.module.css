@@ -24,8 +24,10 @@
     }
 }
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 530px) {
     .icon-bar {
-        width: 150px;
+        width: 90%;
+        font-size: 20px;
     }
 }
+
