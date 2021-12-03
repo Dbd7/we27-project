@@ -9,7 +9,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
-  faAddressBook
+  faAddressBook,
+  faGamepad,
 } from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
@@ -31,7 +32,7 @@ const NavBar = () => {
   const navList = [
     {name: 'CONTACT', linkSrc: '/contact', iconSrc: faAddressBook},
     {name: 'HOME', linkSrc: '/', iconSrc: faHome},
-    {name: 'DOWNLOAD', linkSrc: '/gamelist', iconSrc: faAddressBook},
+    {name: 'DOWNLOAD', linkSrc: '/gamelist', iconSrc: faGamepad},
   ]
 
   return (
