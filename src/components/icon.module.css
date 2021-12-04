@@ -3,12 +3,12 @@
     background-color: rgba(145, 152, 159, 0.50);
     display: block;
     justify-content: center;
-    width: 280px;
-    padding: 10px;
-    border-radius: 15px;
-    margin: 10px;
+    width: 150px;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 8px;
     color: white;
-    font-size: 32px;
+    font-size: 24px;
     text-decoration: none;
     text-align: center;
 }
@@ -19,15 +19,7 @@
 
 @media only screen and (max-width: 600px) {
     .icon-bar {
-        width: 42%;
-        font-size: 20px;
+        width: 60px;
+        font-size: 12px;
     }
 }
-
-@media only screen and (max-width: 530px) {
-    .icon-bar {
-        width: 90%;
-        font-size: 20px;
-    }
-}
-
