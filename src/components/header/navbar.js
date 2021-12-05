@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from '@reach/router';
 import { Link } from "gatsby";
 import {
   navBar,
@@ -13,20 +14,35 @@ import {
   faGamepad,
 } from '@fortawesome/free-solid-svg-icons'
 
-const NavBar = () => {
+const NavBar = (props) => {
+  //width resolution
   const [width, setWidth] = useState(0);
-
   useEffect(() => {
     updateDimensions();
     window.addEventListener("resize", updateDimensions);
-
     return () =>
       window.removeEventListener("resize", updateDimensions);
   }, []);
 
   const updateDimensions = () => {
     const width = window.innerWidth;
-    setWidth(width)
+    setWidth(width);
+  }
+
+  const url = useLocation();
+  
+  const [path, setPath] = useState(useLocation().pathname);
+  useEffect(() => {
+    currentPath();
+    window.addEventListener('hashchange', currentPath);
+    return () =>
+      window.removeEventListener('hashchange', currentPath);
+  })
+
+  const currentPath = () => {
+    const path = url.pathname;
+    setPath(path);
+    console.log(path)
   }
 
   const navList = [

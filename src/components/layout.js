@@ -5,7 +5,6 @@ import Header from './header/header'
 import Top from './top/top'
 import Middle  from './middle/middle'
 import NavBar from "./header/navbar";
-
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
     query {

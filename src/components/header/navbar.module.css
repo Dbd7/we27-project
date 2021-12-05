@@ -37,8 +37,13 @@
   text-decoration: none;
 }
 
-@media only screen and (max-width: 700px) {
-  .nav-link-text {
-    color: white;
-  }
+  
+.nav-link-text-active {
+  display: block;
+  text-align: center;
+  color: rgba(245, 224, 80, 1);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-decoration: none;
 }
