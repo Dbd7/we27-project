@@ -42,7 +42,6 @@ const NavBar = (props) => {
   const currentPath = () => {
     const path = url.pathname;
     setPath(path);
-    console.log(path)
   }
 
   const navList = [

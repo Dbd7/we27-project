@@ -1,0 +1,11 @@
+.clock-bar {
+    margin: auto 10px;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .clock-bar {
+        font-size: 16px;
+        margin: auto 4px;
+    }
+}

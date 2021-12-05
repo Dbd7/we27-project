@@ -1,13 +1,33 @@
+.status-bar {
+  height: 48px;
+  display: flex;
+  justify-content: space-around;
+}
+
 .heading {
     color: white;
-    display: inline-block;
-    width: 100%;
     margin: 0 auto;
     text-align: center;
   }
+  
+.side-element {
+  margin: auto 10px;
+  font-size: 24px;
+}
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
   .heading {
-    font-size: 24px
+    display: none;
+  }
+
+  .status-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .side-element {
+    font-size: 16px;
+    margin: auto 4px;
   }
 }
+

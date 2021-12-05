@@ -1,9 +1,15 @@
 import React from "react";
-import { heading } from "./top.module.css"
+import ClockBar from "./clockBar";
+import OnlineBar from "./onlineBar";
+import { heading, statusBar, sideElement } from "./top.module.css"
 
 const Top = ({ pageTitle }) => {
     return (
-        <h1 className={heading}>{pageTitle}</h1>
+        <div className={statusBar}>
+            <OnlineBar className={sideElement} />
+            <h1 className={heading}>{pageTitle}</h1>
+            <ClockBar className={sideElement}/>
+        </div> 
     )
 }
 
